@@ -31,15 +31,10 @@ AI agents (Claude Code) write most of the code. I own the architecture, the chec
 
 Project details and numbers are under NDA.
 
-### Own project
-
-**AI seller for WhatsApp** on the official Cloud API: request signature check, prompt-injection protection, handoff to a live manager, 24 automated tests, 4–8 s reply time in tests.
-
 ### Open source
 
-- **[n8n-multi-agent-orchestrator](https://github.com/mike-prokhorov/n8n-multi-agent-orchestrator)** — six-workflow Telegram hub: an LLM classifier routes inbound messages to small sub-agents, each with its own prompt and an audit row in Postgres.
+- **[n8n-multi-agent-orchestrator](https://github.com/mike-prokhorov/n8n-multi-agent-orchestrator)** — six n8n workflows behind one Telegram bot: the entry workflow routes by message type, an LLM classifier with structured output picks the department agent. Contract tests and CI.
 - **[bot-monitoring-patterns](https://github.com/mike-prokhorov/bot-monitoring-patterns)** — how to keep a fleet of n8n workflows, Telegram bots and cron jobs honest: dead-man switch, monitor-of-monitors, error router.
-- **[n8n-automation-templates](https://github.com/mike-prokhorov/n8n-automation-templates)** — tested n8n templates: orchestrator, voice-to-post pipeline, global error notifier, health monitor.
 - **[rat-race](https://github.com/mike-prokhorov/rat-race)** — browser money game based on the Cashflow board game.
 
 ### Stack
